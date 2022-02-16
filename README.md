@@ -13,7 +13,7 @@ To use it yourself first create a virtual environment called `venv` and install 
 
 <img src="./assets/text_recognition.gif"  width="700"/>
 
-## Air Canvas
+## Air Canvas
 
 The goal of this project is to augment reality by drawing in the air. The process works in two steps: the first to choose a pointer and find an adequate HSV range. This is illustrated in the first example thanks to dynamic HSV range tuners. And in a second, using the pointer's color range and dilation, the program detects the pointer and draw a line linking the successive positions. All the process is implemented using OpenCV and NumPy.
 
