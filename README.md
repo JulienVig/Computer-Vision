@@ -17,16 +17,24 @@ To use it yourself first create a virtual environment called `venv` and install 
 
 The goal of this project is to augment reality by drawing in the air. The process works in two steps: the first to choose a pointer and find an adequate HSV range. This is illustrated in the first example thanks to dynamic HSV range tuners. And in a second, using the pointer's color range and dilation, the program detects the pointer and draw a line linking the successive positions. All the process is implemented using OpenCV and NumPy.
 
-<img src="./assets/hsv_picker.gif"  width="700"/>
+<img src="./assets/hsv_picker.png"  width="700"/>
 <img src="./assets/air_canvas.gif"  width="700"/>
+
+## Automatic Number Plate recognition
+
+This project builds on top of the first one, text recognition, by trying to read the license plate from a car within an image. The pipeline first finds potential license plate by successively converting to grayscale, applying a bilateral and canny filters and finally finding the contours. We choose the first 4-edge contour. We then apply a mask of this contour to the original image to extract the license plate and apply Optical Character Recognition using Tesseract. The output text is cleaned using regex to keep only alphanumeric characters.
+
+<img src="./assets/anpr.png"  width="700"/>
+
+## Colorful Image Colorization
+
+This is a playground for coloring grayscale images using the pre-trained model of Zhang et al.
 
 
 ## Futur ideas
 
-* License plate recognition
 * Road lane detection
 * Vehicle counting
-* Image colorization CNN
 * Image deblurring through GAN
 * Transform images into painter's style with CycleGAN
 
