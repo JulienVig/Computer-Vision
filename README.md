@@ -28,8 +28,6 @@ This project builds on top of the first one, text recognition, by trying to read
 
 ## Colorful Image Colorization
 
-![](https://raw.githubusercontent.com/richzhang/colorization/blob/4f6009ed1495b1300231ebeb41cc4015557ddef7/imgs/ansel_adams3.jpg)
-
 This is a playground for coloring grayscale images using the pre-trained model of Zhang et al.
 
 
