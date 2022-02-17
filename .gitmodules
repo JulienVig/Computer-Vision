@@ -1,0 +1,3 @@
+[submodule "image_colorization/colorization"]
+	path = image_colorization/colorization
+	url = https://github.com/richzhang/colorization.git

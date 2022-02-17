@@ -19,3 +19,14 @@ The goal of this project is to augment reality by drawing in the air. The proces
 
 <img src="./assets/hsv_picker.gif"  width="700"/>
 <img src="./assets/air_canvas.gif"  width="700"/>
+
+
+## Futur ideas
+
+* License plate recognition
+* Road lane detection
+* Vehicle counting
+* Image colorization CNN
+* Image deblurring through GAN
+* Transform images into painter's style with CycleGAN
+
