@@ -38,8 +38,8 @@ def main(path):
         cv2.drawContours(img, [screenCnt], -1, (0, 0, 255), 3)
 
         mask = np.zeros(gray.shape,np.uint8)
-        new_image = cv2.drawContours(mask,[screenCnt],0,255,-1,)
-        new_image = cv2.bitwise_and(img,img,mask=mask)
+        cv2.drawContours(mask,[screenCnt],0,255,-1,)
+        cv2.bitwise_and(img,img,mask=mask)
 
         (x, y) = np.where(mask == 255)
         (topx, topy) = (np.min(x), np.min(y))
